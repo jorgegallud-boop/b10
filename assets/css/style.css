@@ -152,6 +152,32 @@ main {
   color: var(--color-text-muted);
 }
 
+/* Bibliografía / recursos al final de una charla */
+.charla .recursos {
+  margin-top: 2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--color-border);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+}
+
+.charla .recursos h2 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-text-muted);
+  margin: 0 0 0.5rem;
+}
+
+.charla .recursos ul {
+  margin: 0 0 1.1rem;
+  padding-left: 1.2rem;
+}
+
+.charla .recursos li {
+  margin-bottom: 0.3rem;
+}
+
 @media (max-width: 32rem) {
   body {
     font-size: 1rem;

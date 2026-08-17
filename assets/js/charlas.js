@@ -10,4 +10,5 @@
  */
 const CHARLAS = [
   { slug: "clase-introductoria", titulo: "0. Clase introductoria" },
+  { slug: "el-opus-dei-como-obra-de-dios", titulo: "1. El Opus Dei como obra de Dios" },
 ];

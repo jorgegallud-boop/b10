@@ -5,11 +5,15 @@
     2. Rellenar título, fuente y el esquema
     3. Añadir una entrada en assets/js/charlas.js con el mismo slug
 
-  Criterios del esquema:
+  Criterios del esquema (ver también README.md):
+    - Fidelidad total al guion pegado en la conversación: nada inventado ni añadido.
+    - Ninguna idea del guion se queda fuera, aunque se resuma de forma breve.
     - Directo al grano: sin apartado "Ideas fundamentales" ni "Objetivo de esta charla".
     - Las citas literales del guion van integradas en la propia frase donde aparecen,
       con la clase "cita-inline" (se resaltan en otro color) y, si hay atribución,
       un <span class="cita-fuente"> justo después entre paréntesis.
+    - Si el guion trae bibliografía o recursos complementarios, se recogen en la
+      <section class="recursos"> del final (solo si el guion los incluye).
 -->
 <!doctype html>
 <html lang="es">
@@ -36,6 +40,15 @@
       </li>
       <li>Idea principal 2.</li>
     </ul>
+
+    <!-- Solo si el guion trae bibliografía/recursos; si no, quitar este bloque.
+    <section class="recursos">
+      <h2>Bibliografía para preparar la clase</h2>
+      <ul>
+        <li>[...]</li>
+      </ul>
+    </section>
+    -->
   </main>
 
   <footer class="site-footer">
