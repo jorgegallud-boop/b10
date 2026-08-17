@@ -10,4 +10,11 @@
  *
  * Ver README.md para el proceso de añadir una charla nueva.
  */
-const CHARLAS = [];
+const CHARLAS = [
+  {
+    slug: "clase-introductoria",
+    titulo: "0. Clase introductoria",
+    tema: "Formación inicial",
+    resumen: "Panorama general de la formación inicial: su itinerario (círculos, apartados II, III y IV) y el sentido último de la formación como llamada a ser hijo de Dios.",
+  },
+];
