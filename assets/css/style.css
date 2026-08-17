@@ -48,15 +48,8 @@ a:hover {
 
 .site-header h1 {
   font-size: 1.6rem;
-  margin: 0 0 0.35rem;
-  letter-spacing: -0.01em;
-}
-
-.site-header .subtitle {
-  color: var(--color-text-muted);
-  font-family: var(--font-sans);
-  font-size: 0.95rem;
   margin: 0;
+  letter-spacing: -0.01em;
 }
 
 .site-header .back {
@@ -124,22 +117,6 @@ main {
   text-decoration: underline;
 }
 
-.charla-card .card-tema {
-  font-family: var(--font-sans);
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--color-accent);
-  margin: 0.15rem 0 0.4rem;
-}
-
-.charla-card .card-resumen {
-  font-family: var(--font-sans);
-  font-size: 0.92rem;
-  color: var(--color-text-muted);
-  margin: 0;
-}
-
 .empty-state {
   font-family: var(--font-sans);
   color: var(--color-text-muted);
@@ -165,45 +142,30 @@ main {
   margin-bottom: 2rem;
 }
 
-.charla section {
-  margin-bottom: 2.2rem;
+.charla .esquema {
+  padding-left: 1.3rem;
+  margin: 0 0 1.5rem;
 }
 
-.charla h2 {
-  font-size: 1.15rem;
-  border-bottom: 1px solid var(--color-border);
-  padding-bottom: 0.35rem;
-  margin-bottom: 0.9rem;
+.charla .esquema li {
+  margin-bottom: 0.7rem;
 }
 
 .charla .esquema ul {
   padding-left: 1.3rem;
-  margin: 0;
+  margin: 0.5rem 0 0;
 }
 
-.charla .esquema li {
-  margin-bottom: 0.5rem;
-}
-
-.charla .esquema ul ul {
-  margin-top: 0.4rem;
-}
-
-.charla blockquote {
-  margin: 0 0 1.1rem;
-  padding: 0.6rem 1rem;
-  border-left: 3px solid var(--color-accent);
-  background: var(--color-bg-alt);
+/* Citas integradas en el propio texto del esquema */
+.cita-inline {
+  color: var(--color-accent);
   font-style: italic;
-  color: var(--color-text);
 }
 
-.charla blockquote cite {
-  display: block;
-  margin-top: 0.4rem;
+.cita-fuente {
   font-family: var(--font-sans);
   font-style: normal;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   color: var(--color-text-muted);
 }
 

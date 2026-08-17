@@ -23,12 +23,16 @@ charlas/<slug>.html        Una página por charla
    minúsculas y con guiones, ej. `charlas/gestion-del-tiempo.html`).
 2. Rellenar en esa página:
    - Título y enlace a la fuente original.
-   - **Ideas fundamentales**: esquema jerárquico (listas anidadas) con las
-     ideas clave del guion, no un resumen en prosa.
-   - **Citas del guion**: las citas literales tal cual aparecen en el guion
-     original, en `<blockquote>`.
-3. Añadir una entrada en `assets/js/charlas.js` con `slug`, `titulo`, `tema`
-   y un `resumen` de una frase. Aparece automáticamente en la portada.
+   - Un esquema jerárquico (listas anidadas) directo al grano, con las ideas
+     clave del guion — sin cabecera de "Ideas fundamentales" ni apartado de
+     "Objetivo de esta charla".
+   - Las citas literales del guion van **integradas en la propia frase**
+     donde encajan, envueltas en `<span class="cita-inline">` (se resaltan
+     en otro color) y, si hay atribución, un `<span class="cita-fuente">`
+     justo después entre paréntesis. No se agrupan en una sección aparte.
+3. Añadir una entrada en `assets/js/charlas.js` con `slug` y `titulo`
+   (número + título, ej. `"0. Clase introductoria"`). Aparece automáticamente
+   en la portada, que solo muestra ese número/título por charla.
 
 ## Despliegue (GitHub Pages)
 

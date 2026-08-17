@@ -2,15 +2,21 @@
   PLANTILLA — no es una charla real, no se enlaza desde el índice.
   Para añadir una charla nueva:
     1. Copiar este archivo como charlas/<slug>.html
-    2. Rellenar título, fuente, esquema y citas
+    2. Rellenar título, fuente y el esquema
     3. Añadir una entrada en assets/js/charlas.js con el mismo slug
+
+  Criterios del esquema:
+    - Directo al grano: sin apartado "Ideas fundamentales" ni "Objetivo de esta charla".
+    - Las citas literales del guion van integradas en la propia frase donde aparecen,
+      con la clase "cita-inline" (se resaltan en otro color) y, si hay atribución,
+      un <span class="cita-fuente"> justo después entre paréntesis.
 -->
 <!doctype html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>[Título de la charla] · Resúmenes de charlas</title>
+  <title>[Título de la charla] · Apartado II</title>
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -22,24 +28,14 @@
     <h1>[Título de la charla]</h1>
     <p class="meta">📎 <a href="[URL ORIGINAL DE LA CHARLA]" target="_blank" rel="noopener">Ver charla original en recursosformacion.org</a></p>
 
-    <section class="esquema">
-      <h2>Ideas fundamentales</h2>
-      <ul>
-        <li>Idea principal 1
-          <ul>
-            <li>Matiz o desarrollo</li>
-          </ul>
-        </li>
-        <li>Idea principal 2</li>
-      </ul>
-    </section>
-
-    <section class="citas">
-      <h2>Citas del guion</h2>
-      <blockquote>
-        “Texto literal de la cita tal y como aparece en el guion.”
-      </blockquote>
-    </section>
+    <ul class="esquema">
+      <li>Idea principal 1. <span class="cita-inline">“Cita literal tal y como aparece en el guion.”</span> <span class="cita-fuente">(San Josemaría)</span>
+        <ul>
+          <li>Matiz o desarrollo de la idea.</li>
+        </ul>
+      </li>
+      <li>Idea principal 2.</li>
+    </ul>
   </main>
 
   <footer class="site-footer">
