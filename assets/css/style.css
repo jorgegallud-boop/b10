@@ -125,6 +125,17 @@ main {
   margin-bottom: 2rem;
 }
 
+.charla .nota-guion {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--color-text-muted);
+  background: var(--color-bg-alt);
+  border-left: 3px solid var(--color-border);
+  padding: 0.6rem 0.9rem;
+  margin: 0 0 1.8rem;
+}
+
 .charla .esquema {
   padding-left: 1.3rem;
   margin: 0 0 1.5rem;
