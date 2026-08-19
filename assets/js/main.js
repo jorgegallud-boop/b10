@@ -1,6 +1,6 @@
 (function () {
-  const list = document.getElementById("charlas-list");
-  if (!list) return;
+  const container = document.getElementById("charlas-list");
+  if (!container) return;
 
   function cardHTML(charla) {
     return `
@@ -11,9 +11,21 @@
   }
 
   if (CHARLAS.length === 0) {
-    list.innerHTML = `<li class="empty-state">Todavía no hay charlas cargadas.</li>`;
+    container.innerHTML = `<p class="empty-state">Todavía no hay charlas cargadas.</p>`;
     return;
   }
 
-  list.innerHTML = CHARLAS.map(cardHTML).join("");
+  const html = BLOQUES.map((bloque) => {
+    const charlasDelBloque = CHARLAS.filter((c) => c.bloque === bloque.id);
+    if (charlasDelBloque.length === 0) return "";
+    return `
+      <section class="bloque bloque-${bloque.id}">
+        <h2 class="bloque-titulo"><span class="bloque-letra">${bloque.id}</span> ${bloque.titulo}</h2>
+        ${bloque.subtitulo ? `<p class="bloque-subtitulo">${bloque.subtitulo}</p>` : ""}
+        <ul class="charlas-grid">${charlasDelBloque.map(cardHTML).join("")}</ul>
+      </section>
+    `;
+  }).join("");
+
+  container.innerHTML = html;
 })();
