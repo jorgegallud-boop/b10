@@ -15,17 +15,14 @@ const BLOQUES = [
   {
     id: "A",
     titulo: "El espíritu del Opus Dei",
-    subtitulo: "Rasgos fundamentales de la llamada a ser y vivir como hijos de Dios en Cristo",
   },
   {
     id: "B",
     titulo: "Medios para la identificación con Jesucristo",
-    subtitulo: "Según el espíritu del Opus Dei",
   },
   {
     id: "C",
     titulo: "La formación en el Opus Dei",
-    subtitulo: "",
   },
 ];
 

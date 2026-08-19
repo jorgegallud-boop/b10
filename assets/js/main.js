@@ -21,7 +21,6 @@
     return `
       <section class="bloque bloque-${bloque.id}">
         <h2 class="bloque-titulo"><span class="bloque-letra">${bloque.id}</span> ${bloque.titulo}</h2>
-        ${bloque.subtitulo ? `<p class="bloque-subtitulo">${bloque.subtitulo}</p>` : ""}
         <ul class="charlas-grid">${charlasDelBloque.map(cardHTML).join("")}</ul>
       </section>
     `;
