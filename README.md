@@ -1,7 +1,13 @@
-# Apartado II — guiones de repaso
+# Guiones de repaso — Apartados II y IV
 
-Web estática con el esquema de cada charla del apartado II de
-[recursosformacion.org](https://recursosformacion.org/apartado-2/), pensada
+Web estática con dos apartados:
+
+- **Apartado II**: esquema de cada charla del apartado II de
+  [recursosformacion.org](https://recursosformacion.org/apartado-2/).
+- **Apartado IV**: esquema de los 36 temas (37 páginas: el 22 tiene dos partes) de la
+  [Síntesis de la fe católica](https://opusdei.org/es/page/resumenes-de-fe-cristiana/) de opusdei.org.
+
+Pensada
 como **guión de repaso rápido** para quien ya conoce el contenido y las ha
 dado muchas veces — no como material introductorio para quien no lo conoce.
 
@@ -24,12 +30,16 @@ directamente en GitHub Pages.
 ## Estructura
 
 ```
-index.html                 Portada: índice de charlas (número y título)
+index.html                 Portada: enlaces a Apartado II y Apartado IV
+apartado-ii.html           Índice del Apartado II (bloques A/B/C)
+apartado-iv.html           Índice del Apartado IV (lista única 1-36)
 assets/css/style.css       Estilos
-assets/js/charlas.js       Índice de charlas (fuente de la portada)
-assets/js/main.js          Renderiza el índice
+assets/js/charlas.js       Datos del índice del Apartado II
+assets/js/temas.js         Datos del índice del Apartado IV
+assets/js/main.js          Renderiza el índice (carpeta según data-base)
 charlas/_plantilla.html    Plantilla para crear una charla nueva (no se enlaza)
-charlas/<slug>.html        Una página por charla
+charlas/<slug>.html        Una página por charla (Apartado II)
+temas/<slug>.html          Una página por tema (Apartado IV; slug = el de opusdei.org)
 ```
 
 ## Añadir una charla nueva

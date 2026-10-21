@@ -2,10 +2,14 @@
   const container = document.getElementById("charlas-list");
   if (!container) return;
 
+  // Carpeta de las páginas: "charlas" (Apartado II) o "temas" (Apartado IV)
+  const base = container.dataset.base || "charlas";
+  const bloques = typeof BLOQUES !== "undefined" ? BLOQUES : [];
+
   function cardHTML(charla) {
     return `
       <li class="charla-card">
-        <a class="card-title" href="charlas/${charla.slug}.html">${charla.titulo}</a>
+        <a class="card-title" href="${base}/${charla.slug}.html">${charla.titulo}</a>
       </li>
     `;
   }
@@ -15,7 +19,13 @@
     return;
   }
 
-  const html = BLOQUES.map((bloque) => {
+  // Sin bloques: lista única
+  if (bloques.length === 0) {
+    container.innerHTML = `<ul class="charlas-grid">${CHARLAS.map(cardHTML).join("")}</ul>`;
+    return;
+  }
+
+  const html = bloques.map((bloque) => {
     const charlasDelBloque = CHARLAS.filter((c) => c.bloque === bloque.id);
     if (charlasDelBloque.length === 0) return "";
     return `

@@ -1,0 +1,45 @@
+/*
+ * Índice de temas del Apartado IV (Síntesis de la fe católica, opusdei.org).
+ * Lista única, sin bloques. Campos: slug (archivo en /temas) y titulo.
+ */
+const BLOQUES = [];
+
+const CHARLAS = [
+  { slug: "tema-1-el-anhelo-de-dios", titulo: "1. El anhelo de Dios" },
+  { slug: "tema-2-el-porque-de-la-revelacion", titulo: "2. El porqué de la Revelación" },
+  { slug: "tema-3-el-desarrollo-de-la-revelacion", titulo: "3. El desarrollo de la Revelación" },
+  { slug: "tema-4-dios-creador", titulo: "4. Dios creador" },
+  { slug: "tema-5-la-providencia-de-dios", titulo: "5. La Providencia de Dios" },
+  { slug: "tema-6-el-ser-humano-imagen-de-dios", titulo: "6. El ser humano, imagen de Dios" },
+  { slug: "tema-7-la-libertad-humana", titulo: "7. La libertad humana" },
+  { slug: "tema-8-el-dominio-sobre-la-creacion-el-trabajo-la-ecologia", titulo: "8. El dominio sobre la creación. El trabajo. La ecología" },
+  { slug: "tema-9-el-hombre-creado-por-dios-como-varon-y-mujer", titulo: "9. El hombre creado por Dios como varón y mujer" },
+  { slug: "tema-10-el-pecado-y-la-misericordia-de-dios", titulo: "10. El pecado y la misericordia de Dios" },
+  { slug: "tema-11-el-testimonio-evangelico", titulo: "11. El testimonio evangélico" },
+  { slug: "tema-12-la-encarnacion", titulo: "12. La Encarnación" },
+  { slug: "tema-13-pasion-muerte-y-resurreccion-de-jesucristo", titulo: "13. Pasión, muerte y resurrección de Jesucristo" },
+  { slug: "tema-14-el-espiritu-santo-y-su-accion-en-la-iglesia", titulo: "14. El Espíritu Santo y su acción en la Iglesia" },
+  { slug: "tema-15-la-iglesia-fundada-por-cristo", titulo: "15. La Iglesia, fundada por Cristo" },
+  { slug: "tema-16-la-constitucion-jerarquica-de-la-iglesia", titulo: "16. La constitución jerárquica de la Iglesia" },
+  { slug: "tema-17-la-iglesia-y-el-mundo", titulo: "17. La Iglesia y el mundo" },
+  { slug: "tema-18-la-doctrina-social-de-la-iglesia", titulo: "18. La Doctrina Social de la Iglesia" },
+  { slug: "tema-19-la-resurreccion-de-la-carne", titulo: "19. La resurrección de la carne" },
+  { slug: "tema-20-los-sacramentos", titulo: "20. Los sacramentos" },
+  { slug: "tema-21-bautismo-y-confirmacion", titulo: "21. Bautismo y Confirmación" },
+  { slug: "tema-22-la-eucaristia-i", titulo: "22. La Eucaristía (I)" },
+  { slug: "tema-22-la-eucaristia-ii", titulo: "22. La Eucaristía (II)" },
+  { slug: "tema-23-la-penitencia-y-la-uncion-de-los-enfermos", titulo: "23. La Penitencia y la Unción de los enfermos" },
+  { slug: "tema-24-el-matrimonio-y-el-orden-sacerdotal", titulo: "24. Los sacramentos del Matrimonio y del Orden" },
+  { slug: "tema-25-la-vida-cristiana-la-ley-y-la-conciencia", titulo: "25. La vida cristiana: la ley y la conciencia" },
+  { slug: "tema-26-el-sujeto-moral-la-moralidad-de-los-actos-humanos", titulo: "26. El sujeto moral. La moralidad de los actos humanos" },
+  { slug: "tema-27-la-accion-del-espiritu-santo-la-gracia-las-virtudes-teologales-y-los-mandamientos", titulo: "27. La acción del Espíritu Santo: la gracia, las virtudes teologales y los mandamientos" },
+  { slug: "tema-28-primer-y-segundo-mandamientos", titulo: "28. Primer y segundo mandamientos" },
+  { slug: "tema-29-el-tercer-mandamiento", titulo: "29. El tercer mandamiento" },
+  { slug: "tema-30-cuarto-mandamiento-la-familia", titulo: "30. Cuarto mandamiento. La familia" },
+  { slug: "tema-31-el-quinto-mandamiento", titulo: "31. El quinto mandamiento" },
+  { slug: "tema-32-el-sexto-mandamiento", titulo: "32. El sexto mandamiento" },
+  { slug: "tema-33-el-septimo-y-octavo-mandamientos", titulo: "33. El séptimo y octavo mandamientos" },
+  { slug: "tema-34-el-noveno-y-el-decimo-mandamientos", titulo: "34. El noveno y el décimo mandamientos" },
+  { slug: "tema-35-la-oracion-en-la-vida-cristiana", titulo: "35. La oración en la vida cristiana" },
+  { slug: "tema-36-la-oracion-del-padre-nuestro", titulo: "36. La oración del Padre Nuestro" },
+];
